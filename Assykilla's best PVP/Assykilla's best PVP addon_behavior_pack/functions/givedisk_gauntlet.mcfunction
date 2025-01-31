@@ -1,0 +1,1 @@
+give @s assy:reality_disk 8

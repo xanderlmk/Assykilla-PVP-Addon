@@ -1,0 +1,1 @@
+damage @e[tag =! assykilla,r=14,type=!assy:killa_minion] 18 entity_explosion 

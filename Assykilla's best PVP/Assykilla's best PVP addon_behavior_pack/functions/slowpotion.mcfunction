@@ -1,0 +1,1 @@
+effect @e[ r=4, tag=!grounder] slowness 15 3

@@ -1,0 +1,15 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_smithing_transform": {
+    "description": {
+      "identifier": "recipes_7cf083be"
+    },
+    "tags": [
+      "smithing_table"
+    ],
+    "template": "assy:upgrader_template",
+    "base": "assy:leather_leggings",
+    "addition": "minecraft:netherite_ingot",
+    "result": "assy:camo_pants"
+  }
+}

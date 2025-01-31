@@ -1,0 +1,1 @@
+effect @s slowness 6 4 true

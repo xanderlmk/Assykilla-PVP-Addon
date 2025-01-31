@@ -1,0 +1,16 @@
+summon evocation_fang ~3 ~ ~-2
+summon evocation_fang ~3 ~ ~-1
+summon evocation_fang ~-3 ~ ~1
+summon evocation_fang ~-3 ~ ~2
+summon evocation_fang ~-3 ~ ~-2
+summon evocation_fang ~-3 ~ ~-1
+summon evocation_fang ~-2 ~ ~3
+summon evocation_fang ~-1 ~ ~3
+summon evocation_fang ~1 ~ ~-3
+summon evocation_fang ~-1 ~ ~-3
+summon evocation_fang ~-2 ~ ~-3
+summon evocation_fang ~2 ~ ~-3
+summon evocation_fang ~3 ~ ~1
+summon evocation_fang ~2 ~ ~3
+summon evocation_fang ~3 ~ ~2
+summon evocation_fang ~1 ~ ~3

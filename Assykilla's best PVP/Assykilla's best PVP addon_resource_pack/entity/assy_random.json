@@ -1,0 +1,49 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "assy:random",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "villager"
+      },
+      "textures": {
+        "farmer": "textures/entity/pamobile/assy_random",
+        "librarian": "textures/entity/pamobile/assy_random",
+        "priest": "textures/entity/pamobile/assy_random",
+        "smith": "textures/entity/pamobile/assy_random",
+        "butcher": "textures/entity/pamobile/assy_random"
+      },
+      "geometry": {
+        "default": "geometry.assy_random"
+      },
+      "scripts": {
+        "scale": "0.9375"
+      },
+      "animations": {
+        "general": "animation.villager.general",
+        "look_at_target": "animation.common.look_at_target",
+        "move": "animation.villager.move",
+        "baby_transform": "animation.villager.baby_transform"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.villager.general"
+        },
+        {
+          "move": "controller.animation.villager.move"
+        },
+        {
+          "baby": "controller.animation.villager.baby"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.villager"
+      ],
+      "spawn_egg": {
+        "base_color": "#F40075",
+        "overlay_color": "#E200D8"
+      }
+    }
+  }
+}

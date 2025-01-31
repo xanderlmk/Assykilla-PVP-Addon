@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "assy:poison_bomb_bullet",
+      "materials": {
+        "default": "snowball"
+      },
+      "textures": {
+        "default": "textures/entity/pamobile/assy_poison_bomb_bullet"
+      },
+      "geometry": {
+        "default": "geometry.assy_poison_bomb_bullet"
+      },
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "animations": {
+        "move": "animation.pabullet.move"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

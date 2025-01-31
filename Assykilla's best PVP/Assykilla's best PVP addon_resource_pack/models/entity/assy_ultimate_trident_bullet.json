@@ -1,0 +1,109 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.assy_ultimate_trident_bullet",
+        "texture_width": 32,
+        "texture_height": 32,
+        "visible_bounds_width": 4,
+        "visible_bounds_height": 3.5,
+        "visible_bounds_offset": [
+          0,
+          1.25,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "rightitem",
+          "pivot": [
+            0,
+            -7.03125,
+            0
+          ]
+        },
+        {
+          "name": "pole",
+          "parent": "rightitem",
+          "pivot": [
+            0,
+            -0.375,
+            0
+          ],
+          "mirror": true,
+          "cubes": [
+            {
+              "origin": [
+                -0.18125,
+                -0.18125,
+                -3.4625
+              ],
+              "size": [
+                0.3625,
+                0.3625,
+                11.6125
+              ],
+              "inflate": 0.01,
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -0.5625,
+                -0.1875,
+                -1.96875
+              ],
+              "size": [
+                1.125,
+                0.375,
+                0.75
+              ],
+              "uv": [
+                4,
+                0
+              ],
+              "mirror": false
+            },
+            {
+              "origin": [
+                0.5625,
+                -0.1875,
+                -3.09375
+              ],
+              "size": [
+                0.375,
+                0.375,
+                1.5
+              ],
+              "uv": [
+                4,
+                3
+              ],
+              "mirror": false
+            },
+            {
+              "origin": [
+                -0.9375,
+                -0.1875,
+                -3.09375
+              ],
+              "size": [
+                0.375,
+                0.375,
+                1.5
+              ],
+              "uv": [
+                4,
+                3
+              ],
+              "mirror": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

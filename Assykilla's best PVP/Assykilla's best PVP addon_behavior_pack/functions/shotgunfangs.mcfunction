@@ -1,0 +1,9 @@
+summon evocation_fang ~ ~ ~
+summon evocation_fang ~0.5 ~ ~0.5
+summon evocation_fang ~0.5 ~ ~
+summon evocation_fang ~ ~ ~0.5
+summon evocation_fang ~-0.5 ~ ~-0.5
+summon evocation_fang ~-0.5 ~ ~
+summon evocation_fang ~ ~ ~-0.5
+summon evocation_fang ~0.5 ~ ~-0.5
+summon evocation_fang ~-0.5 ~ ~0.5

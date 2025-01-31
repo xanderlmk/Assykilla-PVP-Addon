@@ -1,0 +1,2 @@
+function spacestone
+function mindstone

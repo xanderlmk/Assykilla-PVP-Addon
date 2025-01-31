@@ -1,0 +1,1 @@
+particle minecraft:dragon_death_explosion_emitter ~ ~1 ~

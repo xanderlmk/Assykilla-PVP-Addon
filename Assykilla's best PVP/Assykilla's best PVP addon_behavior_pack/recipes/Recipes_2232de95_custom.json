@@ -1,0 +1,37 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "recipes_9839a461"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:bone",
+        "data": 0
+      },
+      {
+        "item": "minecraft:iron_ingot",
+        "data": 0
+      },
+      {
+        "item": "minecraft:splash_potion",
+        "data": 17
+      },
+      {
+        "item": "minecraft:iron_ingot",
+        "data": 0
+      },
+      {
+        "item": "minecraft:crossbow",
+        "data": 0
+      }
+    ],
+    "result": {
+      "item": "assy:hunter_crossbow",
+      "count": 1
+    }
+  }
+}

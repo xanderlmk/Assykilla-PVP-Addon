@@ -1,0 +1,1 @@
+damage @e[tag =! assykilla,r=25] 18 entity_attack

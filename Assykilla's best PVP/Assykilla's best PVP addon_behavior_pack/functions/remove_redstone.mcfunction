@@ -1,0 +1,13 @@
+setblock -1057 10 -1053 air
+setblock -1055 11 -1055 air
+setblock -1052 10 -1046 air
+setblock -1054 10 -1047 air
+setblock -1054 12 -1047 air
+setblock -1053 11 -1053 air
+setblock -1051 10 -1053 air
+setblock -1056 14 -1047 air
+setblock -1048 10 -1047 air
+setblock -1047 12 -1046 air
+setblock -1049 14 -1046 air
+setblock -1042 11 -1044 air
+setblock -1043 20 -1048 air

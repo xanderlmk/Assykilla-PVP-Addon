@@ -1,0 +1,2843 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "spawn_category": "creature",
+      "is_spawnable": false,
+      "is_summonable": false
+    },
+    "component_groups": {
+      "minecraft:add_raid_omen": {
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "raid_omen",
+              "duration": 30,
+              "display_on_screen_animation": true
+            }
+          ],
+          "remove_effects": "bad_omen"
+        },
+        "minecraft:timer": {
+          "time": [
+            0.0,
+            0.0
+          ],
+          "looping": false,
+          "time_down_event": {
+            "event": "minecraft:clear_add_raid_omen",
+            "target": "self"
+          }
+        }
+      },
+      "minecraft:clear_raid_omen_spell_effect": {
+        "minecraft:spell_effects": {}
+      },
+      "minecraft:raid_trigger": {
+        "minecraft:raid_trigger": {
+          "triggered_event": {
+            "event": "minecraft:remove_raid_trigger",
+            "target": "self"
+          }
+        }
+      },
+      "pamobile:respawn": {
+        "minecraft:mark_variant": {
+          "value": 99999
+        },
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:attack": {
+          "damage": 1
+        },
+        "minecraft:spell_effects": {
+          "remove_effects": [
+            "slow_falling"
+          ]
+        }
+      },
+      "ammo:1": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "ammo:0": {
+        "minecraft:mark_variant": {
+          "value": 0
+        }
+      },
+      "assy:zombie_spell_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": false,
+              "spawn_entity": "assy:zombie_spell_bullet",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "assy:wooden_katana": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.12
+        }
+      },
+      "assy:stone_katana": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.12
+        }
+      },
+      "assy:catapult_sword": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.06
+        }
+      },
+      "assy:cavemen_bat": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.07
+        }
+      },
+      "assy:iron_man_landers": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:magic_wand": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.11
+        }
+      },
+      "assy:destroyer": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:iron_hammer": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.06
+        }
+      },
+      "assy:katana": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:big_snowball_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:big_snowball_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "assy:ice_blade": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:falcon_bomb_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:falcon_bomb_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "assy:hunter_crossbow_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": false,
+              "spawn_entity": "assy:hunter_crossbow_bullet",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "assy:disk_generator": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:ice_boulder_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:ice_boulder_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "assy:explosive_disk_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:explosive_disk_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "assy:infinity_gauntlet": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.08
+        }
+      },
+      "assy:dagger": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:power_rifle_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:power_rifle_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "assy:baton": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:hulk_hand": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:hulk_body": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:hulk_feet": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:superboots": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:golden_leggings": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:leather_helmet": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:leather_tunic": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:leather_leggings": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:golden_chestplate": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:camo_vest": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:camo_pants": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:spiderman_webfiller": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:ultimate_trident_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:ultimate_trident_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "assy:upgraded_trident_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": false,
+              "spawn_entity": "assy:upgraded_trident_bullet",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "assy:spiderman_web_grappler_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": false,
+              "spawn_entity": "assy:spiderman_web_grappler_bullet",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "assy:spiderman_web_trapper_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": false,
+              "spawn_entity": "assy:spiderman_web_trapper_bullet",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "assy:poison_bomb_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": false,
+              "spawn_entity": "assy:poison_bomb_bullet",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "assy:buffed_disk_generator": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:buffed_ice_boulder_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": false,
+              "spawn_entity": "assy:buffed_ice_boulder_bullet",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "assy:buffed_catapult": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.09
+        }
+      },
+      "assy:zom_disk_generator": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:hell_katana": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.12
+        }
+      },
+      "assy:golden_helmet": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:poison_katana": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.12
+        }
+      },
+      "assy:master_katana": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.12
+        }
+      },
+      "assy:packed_ice_blade": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:buffed_shuriken_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:buffed_shuriken_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "assy:buffed_disk_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:buffed_disk_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "assy:cavemen_fury": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.08
+        }
+      },
+      "assy:iron_katana": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.12
+        }
+      },
+      "assy:golden_katana": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.12
+        }
+      },
+      "assy:diamond_katana": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.12
+        }
+      },
+      "assy:netherite_katana": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.12
+        }
+      },
+      "assy:ghost_hand": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.13
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "slow_falling",
+              "duration": 60000,
+              "amplifier": 0,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "assy:reaper_hand": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.13
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "slow_falling",
+              "duration": 60000,
+              "amplifier": 0,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "assy:death_trident_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:death_trident_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "assy:buffed_crossbow_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:buffed_crossbow_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "assy:zombie_slayer": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.12
+        }
+      },
+      "assy:splashing_needles": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.08
+        }
+      },
+      "assy:normal_trident_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:normal_trident_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "assy:packed_rifle_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:packed_rifle_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "assy:reality_disk_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:reality_disk_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "assy:lighting_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:lighting_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "assy:assy_vest": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:magic_sword": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "assy:demon_sword": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.09
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "slow_falling",
+              "duration": 60000,
+              "amplifier": 0,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "assy:devil_sword": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.09
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "slow_falling",
+              "duration": 60000,
+              "amplifier": 0,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "assy:buffed_hammer": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.08
+        }
+      },
+      "assy:shotgun_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:shotgun_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "assy:shuriken_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:shuriken_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "assy:ice_spell_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:ice_spell_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "assy:revolver_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:revolver_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "assy:nausea_spell_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:nausea_spell_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "assy:laser_rifle_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:laser_rifle_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "assy:buffed_revolver_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:buffed_revolver_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "assy:buffed_shotgun_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": false,
+            "spawn_entity": "assy:buffed_shotgun_bullet",
+            "num_to_spawn": 1
+          }
+        ]
+      }
+    },
+    "components": {
+      "minecraft:experience_reward": {
+        "on_death": "Math.Min(query.player_level * 7, 100)"
+      },
+      "minecraft:type_family": {
+        "family": [
+          "player"
+        ]
+      },
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:can_climb": {},
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 1
+      },
+      "minecraft:exhaustion_values": {
+        "heal": 6,
+        "jump": 0.05,
+        "sprint_jump": 0.2,
+        "mine": 0.005,
+        "attack": 0.1,
+        "damage": 0.1,
+        "walk": 0.0,
+        "sprint": 0.1,
+        "swim": 0.01
+      },
+      "minecraft:player.saturation": {
+        "value": 5,
+        "max": 20
+      },
+      "minecraft:player.exhaustion": {
+        "value": 0,
+        "max": 20
+      },
+      "minecraft:player.level": {
+        "value": 0,
+        "max": 24791
+      },
+      "minecraft:player.experience": {
+        "value": 0,
+        "max": 1
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": -1,
+        "inhale_time": 3.75,
+        "generates_bubbles": false
+      },
+      "minecraft:nameable": {
+        "always_show": true,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:physics": {
+        "push_towards_closest_space": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:insomnia": {
+        "days_until_insomnia": 3
+      },
+      "minecraft:rideable": {
+        "seat_count": 2,
+        "family_types": [
+          "parrot_tame"
+        ],
+        "pull_in_entities": true,
+        "seats": [
+          {
+            "position": [
+              0.4,
+              -0.2,
+              -0.1
+            ],
+            "min_rider_count": 0,
+            "max_rider_count": 0,
+            "lock_rider_rotation": 0
+          },
+          {
+            "position": [
+              -0.4,
+              -0.2,
+              -0.1
+            ],
+            "min_rider_count": 1,
+            "max_rider_count": 2,
+            "lock_rider_rotation": 0
+          }
+        ]
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:block_climber": {},
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_mob_effect",
+                  "subject": "self",
+                  "value": "bad_omen"
+                },
+                {
+                  "test": "is_in_village",
+                  "subject": "self",
+                  "value": true
+                }
+              ]
+            },
+            "event": "minecraft:gain_raid_omen"
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "pamobile:refresh_player"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:zombie_spell"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:wooden_katana"
+                }
+              ]
+            },
+            "event": "assy:wooden_katana_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:stone_katana"
+                }
+              ]
+            },
+            "event": "assy:stone_katana_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:catapult_sword"
+                }
+              ]
+            },
+            "event": "assy:catapult_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:cavemen_bat"
+                }
+              ]
+            },
+            "event": "assy:cavemen_bat_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:iron_man_landers"
+                }
+              ]
+            },
+            "event": "assy:iron_man_landers_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:magic_wand"
+                }
+              ]
+            },
+            "event": "assy:magic_wand_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:destroyer"
+                }
+              ]
+            },
+            "event": "assy:destroyer_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:iron_hammer"
+                }
+              ]
+            },
+            "event": "assy:iron_hammer_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:katana"
+                }
+              ]
+            },
+            "event": "assy:katana_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:big_snowball"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:ice_blade"
+                }
+              ]
+            },
+            "event": "assy:ice_blade_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:falcon_bomb"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:hunter_crossbow"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:0"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:disk_generator"
+                }
+              ]
+            },
+            "event": "assy:disk_generator_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:ice_boulder"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:explosive_disk"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:infinity_gauntlet"
+                }
+              ]
+            },
+            "event": "assy:infinity_gauntlet_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:dagger"
+                }
+              ]
+            },
+            "event": "assy:dagger_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:power_rifle"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:baton"
+                }
+              ]
+            },
+            "event": "assy:baton_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:hulk_hand"
+                }
+              ]
+            },
+            "event": "assy:hulk_hand_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "assy:hulk_body"
+                }
+              ]
+            },
+            "event": "assy:hulk_body_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "assy:hulk_feet"
+                }
+              ]
+            },
+            "event": "assy:hulk_feet_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "assy:superboots"
+                }
+              ]
+            },
+            "event": "assy:superboots_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "assy:golden_leggings"
+                }
+              ]
+            },
+            "event": "assy:golden_leggings_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "assy:leather_helmet"
+                }
+              ]
+            },
+            "event": "assy:leather_helmet_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "assy:leather_tunic"
+                }
+              ]
+            },
+            "event": "assy:leather_tunic_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "assy:leather_leggings"
+                }
+              ]
+            },
+            "event": "assy:leather_leggings_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "assy:golden_chestplate"
+                }
+              ]
+            },
+            "event": "assy:golden_chestplate_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "assy:camo_vest"
+                }
+              ]
+            },
+            "event": "assy:camo_vest_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "assy:camo_pants"
+                }
+              ]
+            },
+            "event": "assy:camo_pants_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:spiderman_webfiller"
+                }
+              ]
+            },
+            "event": "assy:spiderman_webfiller_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:ultimate_trident"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:upgraded_trident"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:spiderman_web_grappler"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:spiderman_web_trapper"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:poison_bomb"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:buffed_disk_generator"
+                }
+              ]
+            },
+            "event": "assy:buffed_disk_generator_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:buffed_ice_boulder"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:buffed_catapult"
+                }
+              ]
+            },
+            "event": "assy:buffed_catapult_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:zom_disk_generator"
+                }
+              ]
+            },
+            "event": "assy:zom_disk_generator_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:hell_katana"
+                }
+              ]
+            },
+            "event": "assy:hell_katana_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "assy:golden_helmet"
+                }
+              ]
+            },
+            "event": "assy:golden_helmet_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:poison_katana"
+                }
+              ]
+            },
+            "event": "assy:poison_katana_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:master_katana"
+                }
+              ]
+            },
+            "event": "assy:master_katana_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:packed_ice_blade"
+                }
+              ]
+            },
+            "event": "assy:packed_ice_blade_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:buffed_shuriken"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:buffed_disk"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:cavemen_fury"
+                }
+              ]
+            },
+            "event": "assy:cavemen_fury_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:iron_katana"
+                }
+              ]
+            },
+            "event": "assy:iron_katana_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:golden_katana"
+                }
+              ]
+            },
+            "event": "assy:golden_katana_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:diamond_katana"
+                }
+              ]
+            },
+            "event": "assy:diamond_katana_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:netherite_katana"
+                }
+              ]
+            },
+            "event": "assy:netherite_katana_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:ghost_hand"
+                }
+              ]
+            },
+            "event": "assy:ghost_hand_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:reaper_hand"
+                }
+              ]
+            },
+            "event": "assy:reaper_hand_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:death_trident"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:buffed_crossbow"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:zombie_slayer"
+                }
+              ]
+            },
+            "event": "assy:zombie_slayer_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:splashing_needles"
+                }
+              ]
+            },
+            "event": "assy:splashing_needles_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:normal_trident"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:packed_rifle"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:reality_disk"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:lighting"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "assy:assy_vest"
+                }
+              ]
+            },
+            "event": "assy:assy_vest_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:magic_sword"
+                }
+              ]
+            },
+            "event": "assy:magic_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:demon_sword"
+                }
+              ]
+            },
+            "event": "assy:demon_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:devil_sword"
+                }
+              ]
+            },
+            "event": "assy:devil_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:buffed_hammer"
+                }
+              ]
+            },
+            "event": "assy:buffed_hammer_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:shotgun"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:shuriken"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:ice_spell"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:revolver"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:nausea_spell"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:laser_rifle"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:buffed_revolver"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "assy:buffed_shotgun"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          }
+        ]
+      }
+    },
+    "events": {
+      "minecraft:gain_raid_omen": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_raid_omen"
+          ]
+        }
+      },
+      "minecraft:clear_add_raid_omen": {
+        "remove": {
+          "component_groups": [
+            "minecraft:add_raid_omen"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:clear_raid_omen_spell_effect"
+          ]
+        }
+      },
+      "minecraft:trigger_raid": {
+        "add": {
+          "component_groups": [
+            "minecraft:raid_trigger"
+          ]
+        }
+      },
+      "minecraft:remove_raid_trigger": {
+        "remove": {
+          "component_groups": [
+            "minecraft:raid_trigger"
+          ]
+        }
+      },
+      "pamobile:refresh_player": {
+        "add": {
+          "component_groups": [
+            "pamobile:respawn"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "assy:wooden_katana",
+            "assy:stone_katana",
+            "assy:catapult_sword",
+            "assy:cavemen_bat",
+            "assy:iron_man_landers",
+            "assy:magic_wand",
+            "assy:destroyer",
+            "assy:iron_hammer",
+            "assy:katana",
+            "assy:ice_blade",
+            "assy:disk_generator",
+            "assy:infinity_gauntlet",
+            "assy:dagger",
+            "assy:baton",
+            "assy:hulk_hand",
+            "assy:hulk_body",
+            "assy:hulk_feet",
+            "assy:superboots",
+            "assy:golden_leggings",
+            "assy:leather_helmet",
+            "assy:leather_tunic",
+            "assy:leather_leggings",
+            "assy:golden_chestplate",
+            "assy:camo_vest",
+            "assy:camo_pants",
+            "assy:spiderman_webfiller",
+            "assy:buffed_disk_generator",
+            "assy:buffed_catapult",
+            "assy:zom_disk_generator",
+            "assy:hell_katana",
+            "assy:golden_helmet",
+            "assy:poison_katana",
+            "assy:master_katana",
+            "assy:packed_ice_blade",
+            "assy:cavemen_fury",
+            "assy:iron_katana",
+            "assy:golden_katana",
+            "assy:diamond_katana",
+            "assy:netherite_katana",
+            "assy:ghost_hand",
+            "assy:reaper_hand",
+            "assy:zombie_slayer",
+            "assy:splashing_needles",
+            "assy:assy_vest",
+            "assy:magic_sword",
+            "assy:demon_sword",
+            "assy:devil_sword",
+            "assy:buffed_hammer"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "pamobile:respawn"
+          ]
+        },
+        "remove": {}
+      },
+      "ammo:1": {
+        "remove": {
+          "component_groups": [
+            "ammo:1"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "ammo:1"
+          ]
+        }
+      },
+      "ammo:2": {
+        "remove": {
+          "component_groups": [
+            "ammo:2"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "ammo:2"
+          ]
+        }
+      },
+      "assy:zombie_spell_fire": {
+        "add": {
+          "component_groups": [
+            "assy:zombie_spell_fire"
+          ]
+        }
+      },
+      "assy:wooden_katana_event": {
+        "add": {
+          "component_groups": [
+            "assy:wooden_katana"
+          ]
+        }
+      },
+      "assy:stone_katana_event": {
+        "add": {
+          "component_groups": [
+            "assy:stone_katana"
+          ]
+        }
+      },
+      "assy:catapult_sword_event": {
+        "add": {
+          "component_groups": [
+            "assy:catapult_sword"
+          ]
+        }
+      },
+      "assy:cavemen_bat_event": {
+        "add": {
+          "component_groups": [
+            "assy:cavemen_bat"
+          ]
+        }
+      },
+      "assy:iron_man_landers_event": {
+        "add": {
+          "component_groups": [
+            "assy:iron_man_landers"
+          ]
+        }
+      },
+      "assy:magic_wand_event": {
+        "add": {
+          "component_groups": [
+            "assy:magic_wand"
+          ]
+        }
+      },
+      "assy:destroyer_event": {
+        "add": {
+          "component_groups": [
+            "assy:destroyer"
+          ]
+        }
+      },
+      "assy:iron_hammer_event": {
+        "add": {
+          "component_groups": [
+            "assy:iron_hammer"
+          ]
+        }
+      },
+      "assy:katana_event": {
+        "add": {
+          "component_groups": [
+            "assy:katana"
+          ]
+        }
+      },
+      "assy:big_snowball_fire": {
+        "add": {
+          "component_groups": [
+            "assy:big_snowball_fire"
+          ]
+        }
+      },
+      "assy:ice_blade_event": {
+        "add": {
+          "component_groups": [
+            "assy:ice_blade"
+          ]
+        }
+      },
+      "assy:falcon_bomb_fire": {
+        "add": {
+          "component_groups": [
+            "assy:falcon_bomb_fire"
+          ]
+        }
+      },
+      "assy:hunter_crossbow_fire": {
+        "add": {
+          "component_groups": [
+            "assy:hunter_crossbow_fire"
+          ]
+        }
+      },
+      "assy:disk_generator_event": {
+        "add": {
+          "component_groups": [
+            "assy:disk_generator"
+          ]
+        }
+      },
+      "assy:ice_boulder_fire": {
+        "add": {
+          "component_groups": [
+            "assy:ice_boulder_fire"
+          ]
+        }
+      },
+      "assy:explosive_disk_fire": {
+        "add": {
+          "component_groups": [
+            "assy:explosive_disk_fire"
+          ]
+        }
+      },
+      "assy:infinity_gauntlet_event": {
+        "add": {
+          "component_groups": [
+            "assy:infinity_gauntlet"
+          ]
+        }
+      },
+      "assy:dagger_event": {
+        "add": {
+          "component_groups": [
+            "assy:dagger"
+          ]
+        }
+      },
+      "assy:power_rifle_fire": {
+        "add": {
+          "component_groups": [
+            "assy:power_rifle_fire"
+          ]
+        }
+      },
+      "assy:baton_event": {
+        "add": {
+          "component_groups": [
+            "assy:baton"
+          ]
+        }
+      },
+      "assy:hulk_hand_event": {
+        "add": {
+          "component_groups": [
+            "assy:hulk_hand"
+          ]
+        }
+      },
+      "assy:hulk_body_event": {
+        "add": {
+          "component_groups": [
+            "assy:hulk_body"
+          ]
+        }
+      },
+      "assy:hulk_feet_event": {
+        "add": {
+          "component_groups": [
+            "assy:hulk_feet"
+          ]
+        }
+      },
+      "assy:superboots_event": {
+        "add": {
+          "component_groups": [
+            "assy:superboots"
+          ]
+        }
+      },
+      "assy:golden_leggings_event": {
+        "add": {
+          "component_groups": [
+            "assy:golden_leggings"
+          ]
+        }
+      },
+      "assy:leather_helmet_event": {
+        "add": {
+          "component_groups": [
+            "assy:leather_helmet"
+          ]
+        }
+      },
+      "assy:leather_tunic_event": {
+        "add": {
+          "component_groups": [
+            "assy:leather_tunic"
+          ]
+        }
+      },
+      "assy:leather_leggings_event": {
+        "add": {
+          "component_groups": [
+            "assy:leather_leggings"
+          ]
+        }
+      },
+      "assy:golden_chestplate_event": {
+        "add": {
+          "component_groups": [
+            "assy:golden_chestplate"
+          ]
+        }
+      },
+      "assy:camo_vest_event": {
+        "add": {
+          "component_groups": [
+            "assy:camo_vest"
+          ]
+        }
+      },
+      "assy:camo_pants_event": {
+        "add": {
+          "component_groups": [
+            "assy:camo_pants"
+          ]
+        }
+      },
+      "assy:spiderman_webfiller_event": {
+        "add": {
+          "component_groups": [
+            "assy:spiderman_webfiller"
+          ]
+        }
+      },
+      "assy:ultimate_trident_fire": {
+        "add": {
+          "component_groups": [
+            "assy:ultimate_trident_fire"
+          ]
+        }
+      },
+      "assy:upgraded_trident_fire": {
+        "add": {
+          "component_groups": [
+            "assy:upgraded_trident_fire"
+          ]
+        }
+      },
+      "assy:spiderman_web_grappler_fire": {
+        "add": {
+          "component_groups": [
+            "assy:spiderman_web_grappler_fire"
+          ]
+        }
+      },
+      "assy:spiderman_web_trapper_fire": {
+        "add": {
+          "component_groups": [
+            "assy:spiderman_web_trapper_fire"
+          ]
+        }
+      },
+      "assy:poison_bomb_fire": {
+        "add": {
+          "component_groups": [
+            "assy:poison_bomb_fire"
+          ]
+        }
+      },
+      "assy:buffed_disk_generator_event": {
+        "add": {
+          "component_groups": [
+            "assy:buffed_disk_generator"
+          ]
+        }
+      },
+      "assy:buffed_ice_boulder_fire": {
+        "add": {
+          "component_groups": [
+            "assy:buffed_ice_boulder_fire"
+          ]
+        }
+      },
+      "assy:buffed_catapult_event": {
+        "add": {
+          "component_groups": [
+            "assy:buffed_catapult"
+          ]
+        }
+      },
+      "assy:zom_disk_generator_event": {
+        "add": {
+          "component_groups": [
+            "assy:zom_disk_generator"
+          ]
+        }
+      },
+      "assy:hell_katana_event": {
+        "add": {
+          "component_groups": [
+            "assy:hell_katana"
+          ]
+        }
+      },
+      "assy:golden_helmet_event": {
+        "add": {
+          "component_groups": [
+            "assy:golden_helmet"
+          ]
+        }
+      },
+      "assy:poison_katana_event": {
+        "add": {
+          "component_groups": [
+            "assy:poison_katana"
+          ]
+        }
+      },
+      "assy:master_katana_event": {
+        "add": {
+          "component_groups": [
+            "assy:master_katana"
+          ]
+        }
+      },
+      "assy:packed_ice_blade_event": {
+        "add": {
+          "component_groups": [
+            "assy:packed_ice_blade"
+          ]
+        }
+      },
+      "assy:buffed_shuriken_fire": {
+        "add": {
+          "component_groups": [
+            "assy:buffed_shuriken_fire"
+          ]
+        }
+      },
+      "assy:buffed_disk_fire": {
+        "add": {
+          "component_groups": [
+            "assy:buffed_disk_fire"
+          ]
+        }
+      },
+      "assy:cavemen_fury_event": {
+        "add": {
+          "component_groups": [
+            "assy:cavemen_fury"
+          ]
+        }
+      },
+      "assy:iron_katana_event": {
+        "add": {
+          "component_groups": [
+            "assy:iron_katana"
+          ]
+        }
+      },
+      "assy:golden_katana_event": {
+        "add": {
+          "component_groups": [
+            "assy:golden_katana"
+          ]
+        }
+      },
+      "assy:diamond_katana_event": {
+        "add": {
+          "component_groups": [
+            "assy:diamond_katana"
+          ]
+        }
+      },
+      "assy:netherite_katana_event": {
+        "add": {
+          "component_groups": [
+            "assy:netherite_katana"
+          ]
+        }
+      },
+      "assy:ghost_hand_event": {
+        "add": {
+          "component_groups": [
+            "assy:ghost_hand"
+          ]
+        }
+      },
+      "assy:reaper_hand_event": {
+        "add": {
+          "component_groups": [
+            "assy:reaper_hand"
+          ]
+        }
+      },
+      "assy:death_trident_fire": {
+        "add": {
+          "component_groups": [
+            "assy:death_trident_fire"
+          ]
+        }
+      },
+      "assy:buffed_crossbow_fire": {
+        "add": {
+          "component_groups": [
+            "assy:buffed_crossbow_fire"
+          ]
+        }
+      },
+      "assy:zombie_slayer_event": {
+        "add": {
+          "component_groups": [
+            "assy:zombie_slayer"
+          ]
+        }
+      },
+      "assy:splashing_needles_event": {
+        "add": {
+          "component_groups": [
+            "assy:splashing_needles"
+          ]
+        }
+      },
+      "assy:normal_trident_fire": {
+        "add": {
+          "component_groups": [
+            "assy:normal_trident_fire"
+          ]
+        }
+      },
+      "assy:packed_rifle_fire": {
+        "add": {
+          "component_groups": [
+            "assy:packed_rifle_fire"
+          ]
+        }
+      },
+      "assy:reality_disk_fire": {
+        "add": {
+          "component_groups": [
+            "assy:reality_disk_fire"
+          ]
+        }
+      },
+      "assy:lighting_fire": {
+        "add": {
+          "component_groups": [
+            "assy:lighting_fire"
+          ]
+        }
+      },
+      "assy:assy_vest_event": {
+        "add": {
+          "component_groups": [
+            "assy:assy_vest"
+          ]
+        }
+      },
+      "assy:magic_sword_event": {
+        "add": {
+          "component_groups": [
+            "assy:magic_sword"
+          ]
+        }
+      },
+      "assy:demon_sword_event": {
+        "add": {
+          "component_groups": [
+            "assy:demon_sword"
+          ]
+        }
+      },
+      "assy:devil_sword_event": {
+        "add": {
+          "component_groups": [
+            "assy:devil_sword"
+          ]
+        }
+      },
+      "assy:buffed_hammer_event": {
+        "add": {
+          "component_groups": [
+            "assy:buffed_hammer"
+          ]
+        }
+      },
+      "assy:shotgun_fire": {
+        "add": {
+          "component_groups": [
+            "assy:shotgun_fire"
+          ]
+        }
+      },
+      "assy:shuriken_fire": {
+        "add": {
+          "component_groups": [
+            "assy:shuriken_fire"
+          ]
+        }
+      },
+      "assy:ice_spell_fire": {
+        "add": {
+          "component_groups": [
+            "assy:ice_spell_fire"
+          ]
+        }
+      },
+      "assy:revolver_fire": {
+        "add": {
+          "component_groups": [
+            "assy:revolver_fire"
+          ]
+        }
+      },
+      "assy:nausea_spell_fire": {
+        "add": {
+          "component_groups": [
+            "assy:nausea_spell_fire"
+          ]
+        }
+      },
+      "assy:laser_rifle_fire": {
+        "add": {
+          "component_groups": [
+            "assy:laser_rifle_fire"
+          ]
+        }
+      },
+      "assy:buffed_revolver_fire": {
+        "add": {
+          "component_groups": [
+            "assy:buffed_revolver_fire"
+          ]
+        }
+      },
+      "assy:buffed_shotgun_fire": {
+        "add": {
+          "component_groups": [
+            "assy:buffed_shotgun_fire"
+          ]
+        }
+      }
+    }
+  }
+}

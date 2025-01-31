@@ -1,0 +1,1 @@
+give @s assy:dying_block

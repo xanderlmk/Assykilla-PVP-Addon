@@ -1,0 +1,44 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:item": {
+    "description": {
+      "identifier": "assy:upgrader_template",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:hand_equipped": false,
+      "minecraft:max_stack_size": 64,
+      "minecraft:glint": false,
+      "minecraft:use_modifiers": {
+        "movement_modifier": 1,
+        "use_duration": 0
+      },
+      "minecraft:allow_off_hand": false,
+      "minecraft:icon": "assy:upgrader_template",
+      "minecraft:display_name": {
+        "value": "Upgrader Template"
+      },
+      "tag:minecraft:transform_materials": {},
+      "tag:minecraft:transform_templates": {},
+      "tag:minecraft:transformable_items": {},
+      "tag:minecraft:trim_materials": {},
+      "tag:minecraft:trim_templates": {},
+      "tag:minecraft:trimmable_armors": {},
+      "minecraft:tags": {
+        "tags": [
+          "minecraft:transform_materials",
+          "minecraft:transform_templates",
+          "minecraft:transformable_items",
+          "minecraft:trim_materials",
+          "minecraft:trim_templates",
+          "minecraft:trimmable_armors"
+        ]
+      },
+      "minecraft:custom_components": [
+        "assy_upgrader_template:trigger"
+      ]
+    }
+  }
+}

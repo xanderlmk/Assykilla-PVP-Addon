@@ -1,0 +1,11 @@
+fill -1061 5 -1045 -1061 6 -1047 bamboo_fence
+fill -1044 5 -1059 -1043 6 -1059 bamboo_fence
+fill -1069 11 -1054 -1071 12 -1054 bamboo_fence
+fill -1069 7 -1056 -1071 8 -1056 mangrove_planks
+fill -1044 8 -1071 -1047 9 -1071 bamboo_fence
+fill -1060 11 -1069 -1058 13 -1069 bamboo_fence
+fill -1052 11 -1070 -1050 11 -1070 mangrove_planks
+fill -1057 16 -1071 -1057 18 -1076 bamboo_fence
+fill -1062 7 -1053 -1063 8 -1053 mangrove_planks
+fill -1065 12 -1071 -1065 13 -1071  mangrove_planks
+fill -1062 13 -1061 -1062 15 -1061 mangrove_planks

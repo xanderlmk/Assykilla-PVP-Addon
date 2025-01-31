@@ -1,0 +1,37 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hunter_crossbow_42f86003"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "ABC",
+      "BD "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:bone",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:iron_ingot",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:splash_potion",
+        "data": 17
+      },
+      "D": {
+        "item": "minecraft:crossbow",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "assy:hunter_crossbow",
+      "count": 1
+    }
+  }
+}

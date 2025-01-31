@@ -1,0 +1,1 @@
+effect @s speed 1000000 2 true

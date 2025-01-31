@@ -1,0 +1,60 @@
+{
+    "format_version": "1.21.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "assy:ghost_hand",
+            "menu_category": {
+                "category": "equipment",
+                "group": "itemGroup.name.sword"
+            }
+        },
+        "components": {
+            "minecraft:icon": "assy_ghost_hand",
+            "minecraft:max_stack_size": 1,
+            "minecraft:stacked_by_data": false,
+            "minecraft:glint": false,
+            "minecraft:hand_equipped": true,
+            "minecraft:damage": 14,
+            "minecraft:enchantable": {
+                "value": 10,
+                "slot": "sword"
+            },
+            "minecraft:use_modifiers": {
+                "movement_modifier": 1,
+                "use_duration": 0
+            },
+            "minecraft:durability": {
+                "max_durability": 2057
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "assy:ghost_hand"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability + 0.2 * context.other->query.max_durability"
+                    }
+                ]
+            },
+            "minecraft:can_destroy_in_creative": false,
+            "minecraft:display_name": {
+                "value": "Ghost Hand"
+            },
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:is_sword",
+                    "minecraft:transformable_items",
+                    "minecraft:trimmable_armors"
+                ]
+            },
+            "minecraft:cooldown": {
+                "category": "ghost_hand_cooldown",
+                "duration": 0
+            },
+            "minecraft:allow_off_hand": false,
+            "minecraft:custom_components": [
+                "assy_ghost_hand:trigger"
+            ]
+        }
+    }
+}

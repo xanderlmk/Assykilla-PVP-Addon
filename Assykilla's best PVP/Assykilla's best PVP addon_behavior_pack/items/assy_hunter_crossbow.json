@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "assy:hunter_crossbow",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "Hunter's Crossbow"
+      },
+      "minecraft:cooldown": {
+        "category": "assy:hunter_crossbow_cooldown",
+        "duration": 8.0
+      },
+      "minecraft:allow_off_hand": false,
+      "minecraft:hand_equipped": true,
+      "minecraft:use_animation": "crossbow",
+      "minecraft:max_stack_size": 1,
+      "minecraft:icon": "assy_hunter_crossbow",
+      "minecraft:projectile": {
+        "projectile_entity": "assy:hunter_crossbow_bullet"
+      },
+      "minecraft:throwable": {}
+    }
+  }
+}

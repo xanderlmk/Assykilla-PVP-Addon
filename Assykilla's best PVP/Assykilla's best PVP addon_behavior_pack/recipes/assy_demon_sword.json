@@ -1,0 +1,38 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "demon_sword_0f7422b0"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " AB",
+      "CDA",
+      "DC "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:iron_sword",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:iron_block",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:phantom_membrane",
+        "data": 0
+      },
+      "D": {
+        "item": "minecraft:iron_ingot",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "assy:demon_sword",
+      "count": 1
+    }
+  }
+}

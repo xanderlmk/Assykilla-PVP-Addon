@@ -1,0 +1,18 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "assy_hard_plank": {
+      "textures": [
+        "textures/blocks/assy_hard_plank"
+      ]
+    },
+    "ani_assy_dying_block": {
+      "textures": [
+        "textures/blocks/assy_dying_block"
+      ]
+    }
+  }
+}
