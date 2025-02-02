@@ -1,5 +1,5 @@
 {
-    "format_version": "1.21.10",
+    "format_version": "1.21.40",
     "minecraft:item": {
         "description": {
             "identifier": "assy:disk_generator",
@@ -14,10 +14,9 @@
             "minecraft:stacked_by_data": true,
             "minecraft:glint": false,
             "minecraft:hand_equipped": true,
-            "minecraft:damage": 0,
             "minecraft:enchantable": {
                 "value": 10,
-                "slot": "splash potion"
+                "slot": "sword"
             },
             "minecraft:use_modifiers": {
                 "movement_modifier": 1,

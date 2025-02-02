@@ -19,17 +19,20 @@
             "damage": 0,
             "knockback": true,
             "semi_random_diff_damage": false,
-            "destroy_on_hit": true
-          },
-          "mob_effect": {
-            "effect": "",
-            "durationeasy": 200,
-            "durationnormal": 200,
-            "durationhard": 200,
-            "amplifier": 1
+            "destroy_on_hit": false
           },
           "stick_in_ground": {
             "shake_time": 0.35
+          },
+          "spawn_aoe_cloud": {
+            "radius": 8.0,
+            "radius_on_use": 0,
+            "potion": 27,
+            "particle": "dragonbreath",
+            "duration": 100,
+            "color": [ 10, 100, 10 ],
+            "affect_owner": false,
+            "reapplication_delay": 20
           },
           "arrow_effect": {},
           "definition_event": {
@@ -42,6 +45,7 @@
         },
         "hit_sound": "bow.hit",
         "power": 2,
+        "multiple_targets": true,
         "gravity": 0.6,
         "inertia": 1,
         "anchor": 2,
@@ -78,11 +82,6 @@
               ]
             }
           }
-        ]
-      },
-      "minecraft:entity_spawned": {
-        "sequence": [
-          {}
         ]
       }
     }

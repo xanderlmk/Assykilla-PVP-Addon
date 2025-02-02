@@ -19,14 +19,7 @@
             "damage": 12,
             "knockback": true,
             "semi_random_diff_damage": false,
-            "destroy_on_hit": true
-          },
-          "mob_effect": {
-            "effect": "",
-            "durationeasy": 200,
-            "durationnormal": 200,
-            "durationhard": 200,
-            "amplifier": 1
+            "destroy_on_hit": false
           },
           "stick_in_ground": {
             "shake_time": 0.35
@@ -39,7 +32,7 @@
               "target": "self"
             }
           },
-          "teleport_owner": {}
+          "teleport_owner": true
         },
         "hit_sound": "bow.hit",
         "power": 3.5,
@@ -116,11 +109,6 @@
               }
             ]
           }
-        ]
-      },
-      "minecraft:entity_spawned": {
-        "sequence": [
-          {}
         ]
       }
     }

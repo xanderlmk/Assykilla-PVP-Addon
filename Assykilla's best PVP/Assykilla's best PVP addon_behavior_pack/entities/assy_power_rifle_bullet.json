@@ -19,14 +19,7 @@
             "damage": 10,
             "knockback": true,
             "semi_random_diff_damage": false,
-            "destroy_on_hit": true
-          },
-          "mob_effect": {
-            "effect": "",
-            "durationeasy": 200,
-            "durationnormal": 200,
-            "durationhard": 200,
-            "amplifier": 1
+            "destroy_on_hit": false
           },
           "stick_in_ground": {
             "shake_time": 0.35

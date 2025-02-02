@@ -19,33 +19,37 @@
             "damage": 2,
             "knockback": true,
             "semi_random_diff_damage": false,
-            "destroy_on_hit": true
-          },
-          "mob_effect": {
-            "effect": "",
-            "durationeasy": 200,
-            "durationnormal": 200,
-            "durationhard": 200,
-            "amplifier": 1
+            "destroy_on_hit": false
           },
           "stick_in_ground": {
             "shake_time": 0.35
           },
           "arrow_effect": {},
           "definition_event": {
-            "affect_projectile": true,
+            "affect_target": true,
             "event_trigger": {
               "event": "on:hit",
               "target": "self"
             }
+          },
+          "spawn_aoe_cloud": {
+            "radius": 6.0,
+            "radius_on_use": 0,
+            "potion": 23,
+            "particle": "dragonbreath",
+            "duration": 100,
+            "color": [ 20, 0, 10 ],
+            "affect_owner": false,
+            "reapplication_delay": 20
           }
         },
+        "multiple_targets": true,
         "hit_sound": "bow.hit",
         "power": 0.95,
         "gravity": 1.5,
         "inertia": 1,
         "anchor": 2,
-        "angle_offset": 0,
+        "angle_offset": -0.25,
         "offset": [
           0.0,
           0.5,
@@ -87,21 +91,13 @@
             }
           }
         ]
-      },
-      "minecraft:entity_spawned": {
-        "sequence": [
-          {}
-        ]
       }
     },
     "component_groups": {
       "exploding": {
         "minecraft:explode": {
-          "fuseLength": 2,
           "power": 5,
-          "fuseLit": true,
-          "causesFire": false,
-          "fuse_length": 1,
+          "fuse_length": 0.5,
           "max_resistance": 3.4,
           "breaks_blocks": false,
           "causes_fire": false,

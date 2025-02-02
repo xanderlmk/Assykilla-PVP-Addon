@@ -19,14 +19,7 @@
             "damage": 10,
             "knockback": true,
             "semi_random_diff_damage": false,
-            "destroy_on_hit": true
-          },
-          "mob_effect": {
-            "effect": "",
-            "durationeasy": 200,
-            "durationnormal": 200,
-            "durationhard": 200,
-            "amplifier": 1
+            "destroy_on_hit": false
           },
           "stick_in_ground": {
             "shake_time": 0.35
@@ -78,37 +71,8 @@
                 "function webtrapperweak"
               ]
             }
-          },
-          {
-            "add": {
-              "component_groups": [
-                "exploding"
-              ]
-            }
           }
         ]
-      },
-      "minecraft:entity_spawned": {
-        "sequence": [
-          {}
-        ]
-      }
-    },
-    "component_groups": {
-      "exploding": {
-        "minecraft:explode": {
-          "fuseLength": 2,
-          "power": 2,
-          "fuseLit": true,
-          "causesFire": false,
-          "fuse_length": 0,
-          "max_resistance": 3.4,
-          "breaks_blocks": false,
-          "causes_fire": false,
-          "destroy_affected_by_griefing": false,
-          "fire_affected_by_griefing": false,
-          "fuse_lit": false
-        }
       }
     }
   }

@@ -26,7 +26,7 @@
           },
           "arrow_effect": {},
           "definition_event": {
-            "affect_projectile": true,
+            "affect_target": true,
             "event_trigger": {
               "event": "on:hit",
               "target": "self"
