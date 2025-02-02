@@ -26,7 +26,7 @@ function shootBuffedIceBoulderBullet(targetLocation) {
     projectileComp?.shoot(velocity)
 }
 
-function shootBuffedDeathRevolverBullet(targetLocation){
+function shootBuffedDeathRevolverBullet(targetLocation) {
     const velocity = { x: 0, y: 1, z: 5 }
 
     const arrow = targetLocation.dimension.spawnEntity("assy:buffed_revolver_bullet", {
@@ -41,20 +41,25 @@ function shootBuffedDeathRevolverBullet(targetLocation){
 }
 
 world.beforeEvents.worldInitialize.subscribe(initEvent => {
-    initEvent.itemComponentRegistry.registerCustomComponent("assy_buffed_crossbow:trigger", {
-        onUse: e => {
-            shootBuffedCrossbowBullet(e.targetLocation)
-        },
-    })
-    initEvent.itemComponentRegistry.registerCustomComponent("assy_buffed_ice_boulder:trigger", {
-        onUse: e => {
-            shootBuffedIceBoulderBullet(e.targetLocation)
-        },
-    })
-    initEvent.itemComponentRegistry.registerCustomComponent("assy_buffed_revolver:trigger", {
-        onUse: e => {
-            shootBuffedDeathRevolverBullet(e.targetLocation)
-        }
+    {
+        initEvent.itemComponentRegistry.registerCustomComponent("assy_buffed_crossbow:trigger", {
+            onUse: e => {
+                shootBuffedCrossbowBullet(e.targetLocation)
+            },
+        })
     }
-    )
+    {
+        initEvent.itemComponentRegistry.registerCustomComponent("assy_buffed_ice_boulder:trigger", {
+            onUse: e => {
+                shootBuffedIceBoulderBullet(e.targetLocation)
+            },
+        })
+    }
+    {
+        initEvent.itemComponentRegistry.registerCustomComponent("assy_buffed_revolver:trigger", {
+            onUse: e => {
+                shootBuffedDeathRevolverBullet(e.targetLocation)
+            },
+        })
+    }
 });
