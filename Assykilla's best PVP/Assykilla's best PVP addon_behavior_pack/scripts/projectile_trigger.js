@@ -25,7 +25,7 @@ function shootBuffedIceBoulderBullet(targetLocation) {
 
     projectileComp?.shoot(velocity)
 }
-
+/*
 function shootBuffedDeathRevolverBullet(targetLocation) {
     const velocity = { x: 0, y: 1, z: 5 }
 
@@ -38,7 +38,7 @@ function shootBuffedDeathRevolverBullet(targetLocation) {
     const projectileComp = arrow.getComponent("minecraft:projectile")
 
     projectileComp?.shoot(velocity)
-}
+}*/
 
 world.beforeEvents.worldInitialize.subscribe(initEvent => {
     {
@@ -55,11 +55,12 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
             },
         })
     }
+    /*
     {
         initEvent.itemComponentRegistry.registerCustomComponent("assy_buffed_revolver:trigger", {
             onUse: e => {
                 shootBuffedDeathRevolverBullet(e.targetLocation)
             },
         })
-    }
+    }*/
 });

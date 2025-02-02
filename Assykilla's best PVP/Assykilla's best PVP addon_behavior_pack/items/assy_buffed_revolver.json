@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.10",
+  "format_version": "1.21.40",
   "minecraft:item": {
     "description": {
       "identifier": "assy:buffed_revolver",
@@ -16,6 +16,10 @@
         "category": "assy:buffed_revolver_cooldown",
         "duration": 6.1
       },
+      "minecraft:use_modifiers": {
+        "movement_modifier": 1,
+        "use_duration": 0
+      },
       "minecraft:shooter": {
         "ammunition": [
           {
@@ -30,7 +34,7 @@
         "charge_on_draw": false
       },
       "minecraft:allow_off_hand": false,
-      "minecraft:hand_equipped": true,
+      "minecraft:hand_equipped": false,
       "minecraft:tags": {
         "tags": [
           "minecraft:is_tool"

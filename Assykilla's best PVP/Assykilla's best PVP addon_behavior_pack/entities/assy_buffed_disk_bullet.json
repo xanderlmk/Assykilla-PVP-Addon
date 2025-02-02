@@ -31,9 +31,9 @@
               "event": "on:hit",
               "target": "self"
             }
-          },
-          "remove_on_hit": {}
+          }
         },
+        "stop_on_hurt": true,
         "hit_sound": "bow.hit",
         "power": 0.75,
         "gravity": 0,
@@ -74,11 +74,6 @@
               ]
             }
           }
-        ]
-      },
-      "minecraft:entity_spawned": {
-        "sequence": [
-          {}
         ]
       }
     }
