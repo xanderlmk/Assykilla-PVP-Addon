@@ -10,17 +10,22 @@ function durabilityOnChanged(item, player, isHitEntity = false) {
     const t = Math.floor(Math.random() * 100);
 
     if (t < durability.getDamageChance()) {
-      if (!isHitEntity) durability.damage += 1;
+      if (!isHitEntity) { durability.damage += 1; }
       if (durability.damage >= durability.maxDurability) {
         player.playSound("random.break");
-        if (!isHitEntity) player.getComponent('equippable').setEquipment('Mainhand', undefined)
-      } else {
-        if (!isHitEntity) player.getComponent('equippable').setEquipment('Mainhand', item)
+        if (!isHitEntity) {
+          player.getComponent('equippable').setEquipment('Mainhand', undefined)
+        }
+      }
+      else if (!isHitEntity) {
+        player.getComponent('equippable').setEquipment('Mainhand', item)
       }
     } else {
-      if (!isHitEntity) return;
+      if (!isHitEntity) { return; }
       durability.damage -= 1;
-      if (!isHitEntity) player.getComponent('equippable').setEquipment('Mainhand', item);
+      if (!isHitEntity) {
+        player.getComponent('equippable').setEquipment('Mainhand', item);
+      }
     }
   }
 
@@ -302,9 +307,9 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
     initEvent.itemComponentRegistry.registerCustomComponent("assy_spiderman_web_trapper:trigger", {
       onUse: e => {
         const equippable = e.source.getComponent("minecraft:equippable");
-        if (!equippable) return;
+        if (!equippable) {return;}
         const mainhand = equippable.getEquipmentSlot("Mainhand");
-        if (!mainhand.hasItem()) return;
+        if (!mainhand.hasItem()) {return;}
         mainhand.amount++;
       },
     })
@@ -701,17 +706,6 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
   }
   {
     initEvent.itemComponentRegistry.registerCustomComponent("assy_laser_rifle:trigger", {
-      onUse: e => {
-        const equippable = e.source.getComponent("minecraft:equippable");
-        if (!equippable) return;
-        const mainhand = equippable.getEquipmentSlot("Mainhand");
-        if (!mainhand.hasItem()) return;
-        mainhand.amount++;
-      },
-    })
-  }
-  {
-    initEvent.itemComponentRegistry.registerCustomComponent("assy_buffed_revolver:trigger", {
       onUse: e => {
         const equippable = e.source.getComponent("minecraft:equippable");
         if (!equippable) return;

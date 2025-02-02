@@ -334,6 +334,9 @@
     },
     "assy_buffed_ice_boulder_rock" : {
       "textures": "textures/entity/pamobile/assy_buffed_ice_boulder_bullet"
+    },
+    "assy_buffed_revolver_ammo" : {
+      "textures": "textures/entity/pamobile/assy_buffed_revolver_bullet"
     }
   }
 }

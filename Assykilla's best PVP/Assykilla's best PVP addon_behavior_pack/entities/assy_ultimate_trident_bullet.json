@@ -24,6 +24,7 @@
           "stick_in_ground": {
             "shake_time": 0.35
           },
+          "remove_on_hit": {},
           "arrow_effect": {}
         },
         "liquid_inertia": 0.99,

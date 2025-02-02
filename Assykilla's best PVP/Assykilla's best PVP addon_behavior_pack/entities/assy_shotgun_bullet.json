@@ -109,11 +109,8 @@
     "component_groups": {
       "exploding": {
         "minecraft:explode": {
-          "fuseLength": 2,
-          "power": 3,
-          "fuseLit": true,
-          "causesFire": false,
-          "fuse_length": 2,
+          "power": 2,
+          "fuse_length": -1,
           "max_resistance": 3.4,
           "breaks_blocks": false,
           "causes_fire": false,

@@ -24,7 +24,8 @@
           "stick_in_ground": {
             "shake_time": 0.35
           },
-          "arrow_effect": {}
+          "arrow_effect": {},
+          "remove_on_hit": {}
         },
         "liquid_inertia": 0.99,
         "hit_sound": "item.trident.hit",
