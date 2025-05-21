@@ -1,1 +1,0 @@
-give @s lingering_potion 1 24

@@ -1,1 +1,0 @@
-give @s assy:explosive_disk 2

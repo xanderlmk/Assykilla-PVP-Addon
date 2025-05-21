@@ -1,0 +1,1 @@
+effect @e[r=8, tag=!magician] weakness 6 2

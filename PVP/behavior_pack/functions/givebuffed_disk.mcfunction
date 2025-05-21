@@ -1,1 +1,0 @@
-give @s assy:buffed_disk 4

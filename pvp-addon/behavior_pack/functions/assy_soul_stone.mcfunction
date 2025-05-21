@@ -1,0 +1,1 @@
+give @s assy:soul_stone

@@ -1,0 +1,1 @@
+effect @e[ tag=!assykilla, r = 14,type=!assy:killa_minion] slowness 7 100 true

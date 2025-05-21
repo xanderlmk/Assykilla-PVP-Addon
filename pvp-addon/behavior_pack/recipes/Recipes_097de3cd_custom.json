@@ -1,0 +1,15 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_smithing_transform": {
+    "description": {
+      "identifier": "recipes_e93be196"
+    },
+    "tags": [
+      "smithing_table"
+    ],
+    "template": "assy:upgrader_template",
+    "base": "minecraft:golden_chestplate",
+    "addition": "minecraft:netherite_ingot",
+    "result": "assy:golden_chestplate"
+  }
+}

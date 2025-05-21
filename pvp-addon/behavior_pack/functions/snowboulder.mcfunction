@@ -1,0 +1,1 @@
+effect @e[ tag =! frost, r = 3] slowness 6 5 true

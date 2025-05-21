@@ -1,0 +1,38 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "explosive_disk_6a2b9a72"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "ABA",
+      "CDC",
+      "ABA"
+    ],
+    "key": {
+      "A": {
+        "item": "assy:shuriken_bullet",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:gunpowder",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:iron_ingot",
+        "data": 0
+      },
+      "D": {
+        "item": "minecraft:fireball",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "assy:explosive_disk",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,1 @@
+particle minecraft:large_explosion ~ ~1 ~

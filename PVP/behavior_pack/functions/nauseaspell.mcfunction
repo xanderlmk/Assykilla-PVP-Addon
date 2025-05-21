@@ -1,1 +1,0 @@
-effect @e[r=3, tag=!magician] nausea 15 0 

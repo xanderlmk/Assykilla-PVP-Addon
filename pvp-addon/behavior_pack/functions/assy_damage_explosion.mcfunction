@@ -1,0 +1,1 @@
+effect @e[tag =! assykilla, r=7,type=!assy:killa_minion] instant_damage 1 0

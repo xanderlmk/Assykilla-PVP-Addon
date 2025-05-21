@@ -1,0 +1,1 @@
+summon assy:zombie_boss -1040 7 -1055

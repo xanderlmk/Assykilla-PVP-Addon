@@ -1,1 +1,0 @@
-effect @e[ tag =! frost, r = 7] blindness 5 100 true

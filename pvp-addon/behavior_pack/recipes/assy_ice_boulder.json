@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ice_boulder_3d4c67ad"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " AB",
+      " CA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:cobbled_deepslate",
+        "data": 0
+      },
+      "B": {
+        "item": "assy:big_snowball",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:packed_ice",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "assy:ice_boulder",
+      "count": 1
+    }
+  }
+}

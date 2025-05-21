@@ -1,0 +1,7 @@
+[
+  {
+    "flipbook_texture": "textures/blocks/assy_dying_block",
+    "atlas_tile": "ani_assy_dying_block",
+    "ticks_per_frame": 42
+  }
+]

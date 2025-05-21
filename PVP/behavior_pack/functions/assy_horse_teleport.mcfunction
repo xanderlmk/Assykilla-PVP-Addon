@@ -1,1 +1,0 @@
-give @s assy:horse_teleport

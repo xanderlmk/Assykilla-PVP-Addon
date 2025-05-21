@@ -1,1 +1,0 @@
-summon assy:zombie_boss -1062 16 -1062

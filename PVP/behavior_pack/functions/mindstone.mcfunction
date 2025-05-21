@@ -1,1 +1,0 @@
-effect @e[ tag =! assykilla, r = 18, type=!assy:killa_minion] blindness 8 0 true

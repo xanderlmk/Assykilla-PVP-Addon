@@ -1,1 +1,0 @@
-effect @s speed 10 3 true

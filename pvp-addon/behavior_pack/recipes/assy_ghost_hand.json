@@ -1,0 +1,38 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ghost_hand_52c0196a"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " AB",
+      "CDA",
+      "DC "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:netherite_scrap",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:netherite_ingot",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:iron_ingot",
+        "data": 0
+      },
+      "D": {
+        "item": "minecraft:iron_block",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "assy:ghost_hand",
+      "count": 1
+    }
+  }
+}

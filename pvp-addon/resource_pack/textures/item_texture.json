@@ -1,0 +1,342 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "assy:zombie2_spawn_egg": {
+      "textures": "textures/items/pamobile/assy_zombie2_spawn_egg"
+    },
+    "assy:zombie1_spawn_egg": {
+      "textures": "textures/items/pamobile/assy_zombie1_spawn_egg"
+    },
+    "assy:zombie4_spawn_egg": {
+      "textures": "textures/items/pamobile/assy_zombie4_spawn_egg"
+    },
+    "assy:zombie3_spawn_egg": {
+      "textures": "textures/items/pamobile/assy_zombie3_spawn_egg"
+    },
+    "assy:zombie5_spawn_egg": {
+      "textures": "textures/items/pamobile/assy_zombie5_spawn_egg"
+    },
+    "assy_zombie_spell": {
+      "textures": "textures/items/pamobile/assy_zombie_spell"
+    },
+    "assy:spell_zombie_spawn_egg": {
+      "textures": "textures/items/pamobile/assy_spell_zombie_spawn_egg"
+    },
+    "assy:zombie_boss_spawn_egg": {
+      "textures": "textures/items/pamobile/assy_zombie_boss_spawn_egg"
+    },
+    "assy_catapult_sword": {
+      "textures": "textures/items/pamobile/assy_catapult_sword"
+    },
+    "assy_wooden_katana": {
+      "textures": "textures/items/pamobile/assy_wooden_katana"
+    },
+    "assy_stone_katana": {
+      "textures": "textures/items/pamobile/assy_stone_katana"
+    },
+    "assy_cavemen_bat": {
+      "textures": "textures/items/pamobile/assy_cavemen_bat"
+    },
+    "assy_magic_wand": {
+      "textures": "textures/items/pamobile/assy_magic_wand"
+    },
+    "assy_iron_man_landers": {
+      "textures": "textures/items/pamobile/assy_iron_man_landers"
+    },
+    "assy_destroyer": {
+      "textures": "textures/items/pamobile/assy_destroyer"
+    },
+    "assy:spidermom_spawn_egg": {
+      "textures": "textures/items/pamobile/assy_spidermom_spawn_egg"
+    },
+    "assy:spiderbaby_spawn_egg": {
+      "textures": "textures/items/pamobile/assy_spiderbaby_spawn_egg"
+    },
+    "assy:robot_spawn_egg": {
+      "textures": "textures/items/pamobile/assy_robot_spawn_egg"
+    },
+    "assy_iron_hammer": {
+      "textures": "textures/items/pamobile/assy_iron_hammer"
+    },
+    "assy_katana": {
+      "textures": "textures/items/pamobile/assy_katana"
+    },
+    "assy:horse_teleport": {
+      "textures": "textures/items/pamobile/assy_horse_teleport"
+    },
+    "assy_big_snowball": {
+      "textures": "textures/items/pamobile/assy_big_snowball"
+    },
+    "assy_ice_blade": {
+      "textures": "textures/items/pamobile/assy_ice_blade"
+    },
+    "assy_falcon_bomb": {
+      "textures": "textures/items/pamobile/assy_falcon_bomb"
+    },
+    "assy_hunter_crossbow": {
+      "textures": "textures/items/pamobile/assy_hunter_crossbow"
+    },
+    "assy_disk_generator": {
+      "textures": "textures/items/pamobile/assy_disk_generator"
+    },
+    "assy_ice_boulder": {
+      "textures": "textures/items/pamobile/assy_ice_boulder"
+    },
+    "assy_explosive_disk": {
+      "textures": "textures/items/pamobile/assy_explosive_disk"
+    },
+    "assy_dagger": {
+      "textures": "textures/items/pamobile/assy_dagger"
+    },
+    "assy_infinity_gauntlet": {
+      "textures": "textures/items/pamobile/assy_infinity_gauntlet"
+    },
+    "assy_power_rifle": {
+      "textures": "textures/items/pamobile/assy_power_rifle"
+    },
+    "assy_baton": {
+      "textures": "textures/items/pamobile/assy_baton"
+    },
+    "assy_hulk_hand": {
+      "textures": "textures/items/pamobile/assy_hulk_hand"
+    },
+    "assy_hulk_body": {
+      "textures": [
+        "textures/items/pamobile/assy_hulk_body"
+      ]
+    },
+    "assy_hulk_feet": {
+      "textures": [
+        "textures/items/pamobile/assy_hulk_feet"
+      ]
+    },
+    "assy_leather_helmet": {
+      "textures": [
+        "textures/items/pamobile/assy_leather_helmet"
+      ]
+    },
+    "assy_golden_leggings": {
+      "textures": [
+        "textures/items/pamobile/assy_golden_leggings"
+      ]
+    },
+    "assy_superboots": {
+      "textures": [
+        "textures/items/pamobile/assy_superboots"
+      ]
+    },
+    "assy_leather_tunic": {
+      "textures": [
+        "textures/items/pamobile/assy_leather_tunic"
+      ]
+    },
+    "assy_leather_leggings": {
+      "textures": [
+        "textures/items/pamobile/assy_leather_leggings"
+      ]
+    },
+    "assy_camo_vest": {
+      "textures": [
+        "textures/items/pamobile/assy_camo_vest"
+      ]
+    },
+    "assy_golden_chestplate": {
+      "textures": [
+        "textures/items/pamobile/assy_golden_chestplate"
+      ]
+    },
+    "assy_camo_pants": {
+      "textures": [
+        "textures/items/pamobile/assy_camo_pants"
+      ]
+    },
+    "assy:speed_one": {
+      "textures": "textures/items/pamobile/assy_speed_one"
+    },
+    "assy:speed_two": {
+      "textures": "textures/items/pamobile/assy_speed_two"
+    },
+    "assy:speed_three": {
+      "textures": "textures/items/pamobile/assy_speed_three"
+    },
+    "assy:soul_stone": {
+      "textures": "textures/items/pamobile/assy_soul_stone"
+    },
+    "assy:speed_five": {
+      "textures": "textures/items/pamobile/assy_speed_five"
+    },
+    "assy:speed_sixteen": {
+      "textures": "textures/items/pamobile/assy_speed_sixteen"
+    },
+    "assy_spiderman_webfiller": {
+      "textures": "textures/items/pamobile/assy_spiderman_webfiller"
+    },
+    "assy_ultimate_trident": {
+      "textures": "textures/items/pamobile/assy_ultimate_trident"
+    },
+    "assy_upgraded_trident": {
+      "textures": "textures/items/pamobile/assy_upgraded_trident"
+    },
+    "assy_spiderman_web_grappler": {
+      "textures": "textures/items/pamobile/assy_spiderman_web_grappler"
+    },
+    "assy_spiderman_web_trapper": {
+      "textures": "textures/items/pamobile/assy_spiderman_web_trapper"
+    },
+    "assy_poison_bomb": {
+      "textures": "textures/items/pamobile/assy_poison_bomb"
+    },
+    "assy_buffed_disk_generator": {
+      "textures": "textures/items/pamobile/assy_buffed_disk_generator"
+    },
+    "assy_buffed_ice_boulder": {
+      "textures": "textures/items/pamobile/assy_buffed_ice_boulder"
+    },
+    "assy_buffed_catapult": {
+      "textures": "textures/items/pamobile/assy_buffed_catapult"
+    },
+    "assy_zom_disk_generator": {
+      "textures": "textures/items/pamobile/assy_zom_disk_generator"
+    },
+    "assy_hell_katana": {
+      "textures": "textures/items/pamobile/assy_hell_katana"
+    },
+    "assy_golden_helmet": {
+      "textures": [
+        "textures/items/pamobile/assy_golden_helmet"
+      ]
+    },
+    "assy_poison_katana": {
+      "textures": "textures/items/pamobile/assy_poison_katana"
+    },
+    "assy_packed_ice_blade": {
+      "textures": "textures/items/pamobile/assy_packed_ice_blade"
+    },
+    "assy_master_katana": {
+      "textures": "textures/items/pamobile/assy_master_katana"
+    },
+    "assy_buffed_shuriken": {
+      "textures": "textures/items/pamobile/assy_buffed_shuriken"
+    },
+    "assy_buffed_disk": {
+      "textures": "textures/items/pamobile/assy_buffed_disk"
+    },
+    "assy_cavemen_fury": {
+      "textures": "textures/items/pamobile/assy_cavemen_fury"
+    },
+    "assy:mystery_box": {
+      "textures": "textures/items/pamobile/assy_mystery_box"
+    },
+    "assy_iron_katana": {
+      "textures": "textures/items/pamobile/assy_iron_katana"
+    },
+    "assy_golden_katana": {
+      "textures": "textures/items/pamobile/assy_golden_katana"
+    },
+    "assy_diamond_katana": {
+      "textures": "textures/items/pamobile/assy_diamond_katana"
+    },
+    "assy_netherite_katana": {
+      "textures": "textures/items/pamobile/assy_netherite_katana"
+    },
+    "assy_ghost_hand": {
+      "textures": "textures/items/pamobile/assy_ghost_hand"
+    },
+    "assy_reaper_hand": {
+      "textures": "textures/items/pamobile/assy_reaper_hand"
+    },
+    "assy_buffed_crossbow": {
+      "textures": "textures/items/pamobile/assy_buffed_crossbow"
+    },
+    "assy_death_trident": {
+      "textures": "textures/items/pamobile/assy_death_trident"
+    },
+    "assy_splashing_needles": {
+      "textures": "textures/items/pamobile/assy_splashing_needles"
+    },
+    "assy_zombie_slayer": {
+      "textures": "textures/items/pamobile/assy_zombie_slayer"
+    },
+    "assy:pearl_generator": {
+      "textures": "textures/items/pamobile/assy_pearl_generator"
+    },
+    "assy_packed_rifle": {
+      "textures": "textures/items/pamobile/assy_packed_rifle"
+    },
+    "assy_normal_trident": {
+      "textures": "textures/items/pamobile/assy_normal_trident"
+    },
+    "assy:wind_charger": {
+      "textures": "textures/items/pamobile/assy_wind_charger"
+    },
+    "assy_assy_vest": {
+      "textures": [
+        "textures/items/pamobile/assy_assy_vest"
+      ]
+    },
+    "assy_lighting": {
+      "textures": "textures/items/pamobile/assy_lighting"
+    },
+    "assy_reality_disk": {
+      "textures": "textures/items/pamobile/assy_reality_disk"
+    },
+    "assy_magic_sword": {
+      "textures": "textures/items/pamobile/assy_magic_sword"
+    },
+    "assy:vampirefeast": {
+      "textures": "textures/items/pamobile/assy_vampirefeast"
+    },
+    "assy_demon_sword": {
+      "textures": "textures/items/pamobile/assy_demon_sword"
+    },
+    "assy:ghostspeed": {
+      "textures": "textures/items/pamobile/assy_ghostspeed"
+    },
+    "assy_devil_sword": {
+      "textures": "textures/items/pamobile/assy_devil_sword"
+    },
+    "assy_buffed_hammer": {
+      "textures": "textures/items/pamobile/assy_buffed_hammer"
+    },
+    "assy:potion_summoner": {
+      "textures": "textures/items/pamobile/assy_potion_summoner"
+    },
+    "assy_shuriken": {
+      "textures": "textures/items/pamobile/assy_shuriken"
+    },
+    "assy_ice_spell": {
+      "textures": "textures/items/pamobile/assy_ice_spell"
+    },
+    "assy_revolver": {
+      "textures": "textures/items/pamobile/assy_revolver"
+    },
+    "assy_nausea_spell": {
+      "textures": "textures/items/pamobile/assy_nausea_spell"
+    },
+    "assy_laser_rifle": {
+      "textures": "textures/items/pamobile/assy_laser_rifle"
+    },
+    "assy_shotgun": {
+      "textures": "textures/items/pamobile/assy_shotgun"
+    },
+    "assy_buffed_revolver": {
+      "textures": "textures/items/pamobile/assy_buffed_revolver"
+    },
+    "assy:upgrader_template": {
+      "textures": "textures/items/pamobile/assy_upgrader_template"
+    },
+    "assy_buffed_shotgun": {
+      "textures": "textures/items/pamobile/assy_buffed_shotgun"
+    },
+    "assy_buffed_crossbow_arrow" : {
+      "textures": "textures/entity/pamobile/assy_buffed_crossbow_bullet"
+    },
+    "assy_buffed_ice_boulder_rock" : {
+      "textures": "textures/entity/pamobile/assy_buffed_ice_boulder_bullet"
+    },
+    "assy_buffed_revolver_ammo" : {
+      "textures": "textures/entity/pamobile/assy_buffed_revolver_bullet"
+    }
+  }
+}

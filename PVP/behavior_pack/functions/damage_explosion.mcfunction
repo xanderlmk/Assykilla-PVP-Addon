@@ -1,1 +1,0 @@
-effect @e[tag =! shooter, r=6] instant_damage 1 0

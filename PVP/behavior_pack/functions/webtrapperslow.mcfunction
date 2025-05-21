@@ -1,1 +1,0 @@
-effect @e[r=5, tag=!spiderman] slowness 5 255

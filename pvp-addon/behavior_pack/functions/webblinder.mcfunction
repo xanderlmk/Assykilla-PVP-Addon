@@ -1,0 +1,1 @@
+effect @e[r=3, tag=!spiderman,c=2] blindness 5 0

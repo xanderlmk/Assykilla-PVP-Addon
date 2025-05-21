@@ -1,1 +1,0 @@
-effect @e[r=3, tag=!magician] speed 4 199

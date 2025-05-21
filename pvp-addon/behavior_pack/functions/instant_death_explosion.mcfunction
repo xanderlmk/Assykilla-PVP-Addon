@@ -1,0 +1,1 @@
+effect @e[tag =! assykilla,type=!assy:zombie_boss, r=6] instant_damage 1 20

@@ -1,1 +1,0 @@
-tp @e [ type = skeleton_horse ] @s

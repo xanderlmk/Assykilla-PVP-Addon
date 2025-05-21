@@ -1,0 +1,1 @@
+effect @p[r=2] slowness 6 2 true

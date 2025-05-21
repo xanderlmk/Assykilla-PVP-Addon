@@ -1,0 +1,40 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "assy:reality_disk",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "Explosive Reality Disk"
+      },
+      "minecraft:stacked_by_data": true,
+      "minecraft:cooldown": {
+        "category": "assy:reality_disk_cooldown",
+        "duration": 4.0
+      },
+      "minecraft:allow_off_hand": false,
+      "minecraft:hand_equipped": true,
+      "minecraft:use_animation": "bow",
+      "minecraft:max_stack_size": 16,
+      "minecraft:icon": "assy_reality_disk",
+      "minecraft:projectile": {
+        "projectile_entity": "assy:reality_disk_bullet"
+      },
+      "minecraft:throwable": {
+        "do_swing_animation": false,
+        "launch_power_scale": 1.0,
+        "max_draw_duration": 0.0,
+        "max_launch_power": 1.0,
+        "min_draw_duration": 0.0,
+        "scale_power_by_draw_duration": false
+      },
+      "minecraft:custom_components": [
+        "assy_reality_disk:trigger"
+      ]
+    }
+  }
+}

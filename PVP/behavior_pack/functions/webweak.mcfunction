@@ -1,1 +1,0 @@
-effect @e[r=3, tag=!spiderman,c=2] weakness 2 2

@@ -1,0 +1,1 @@
+fill ~-20 ~-7 ~-20 ~20 ~7 ~20 air 0 replace bedrock

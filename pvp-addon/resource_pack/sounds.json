@@ -1,0 +1,214 @@
+{
+  "entity_sounds": {
+    "entities": {
+      "assy:zombie3": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "ambient": "mob.zombie.say",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
+          "step": {
+            "sound": "mob.zombie.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "assy:zombie2": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "ambient": "mob.zombie.say",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
+          "step": {
+            "sound": "mob.zombie.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "assy:zombie4": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "ambient": "mob.zombie.say",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
+          "step": {
+            "sound": "mob.zombie.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "assy:zombie1": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "ambient": "mob.zombie.say",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
+          "step": {
+            "sound": "mob.zombie.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "assy:zombie5": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "ambient": "mob.zombie.say",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
+          "step": {
+            "sound": "mob.zombie.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "assy:spell_zombie": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "ambient": "mob.zombie.say",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
+          "step": {
+            "sound": "mob.zombie.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "assy:zombie_boss": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "ambient": "mob.zombie.say",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
+          "step": {
+            "sound": "mob.zombie.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "assy:spidermom": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "ambient": "mob.spider.say",
+          "hurt": "mob.spider.say",
+          "death": "mob.spider.death",
+          "step": {
+            "sound": "mob.spider.step",
+            "volume": 1.0,
+            "pitch": 1.0
+          }
+        }
+      },
+      "assy:spiderbaby": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "ambient": "mob.spider.say",
+          "hurt": "mob.spider.say",
+          "death": "mob.spider.death",
+          "step": {
+            "sound": "mob.spider.step",
+            "volume": 1.0,
+            "pitch": 1.0
+          }
+        }
+      },
+      "assy:robot": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "hurt": "mob.snowgolem.hurt",
+          "death": "mob.snowgolem.death",
+          "shoot": "mob.snowgolem.shoot"
+        }
+      },
+      "assy:killa_minion": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.villager.haggle",
+          "haggle.no": "mob.villager.no",
+          "haggle.yes": "mob.villager.yes",
+          "hurt": "mob.villager.hit"
+        }
+      },
+      "assy:zombie_wolf1": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "ambient": "mob.wolf.bark",
+          "hurt": "mob.wolf.hurt",
+          "death": "mob.wolf.death",
+          "step": {
+            "sound": "mob.wolf.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          },
+          "shake": {
+            "sound": "mob.wolf.shake",
+            "pitch": [
+              0.8,
+              1.2
+            ]
+          },
+          "growl": "mob.wolf.growl",
+          "whine": "mob.wolf.whine",
+          "pant": "mob.wolf.panting"
+        }
+      }
+    }
+  }
+}

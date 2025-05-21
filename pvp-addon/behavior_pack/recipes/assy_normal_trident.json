@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "normal_trident_a9e5bae7"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " A ",
+      "B  "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:trident",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:lead",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "assy:normal_trident",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "assy:assy_vest",
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.chestplate"
+      }
+    },
+    "components": {
+      "minecraft:icon": "assy_assy_vest",
+      "minecraft:display_name": {
+        "value": "Assy's Vest"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:enchantable": {
+        "value": 15,
+        "slot": "armor_torso"
+      },
+      "minecraft:durability": {
+        "max_durability": 10000,
+        "damage_chance": {
+          "min": 60,
+          "max": 100
+        }
+      },
+      "knockback_resistance": {
+        "protection": 0.5
+      },
+      "minecraft:hand_equipped": false,
+      "minecraft:wearable": {
+        "slot": "slot.armor.chest",
+        "protection": 8
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [
+              "assy:assy_vest"
+            ],
+            "repair_amount": "context.other->query.remaining_durability + 0.2 * context.other->query.max_durability"
+          }
+        ]
+      },
+      "minecraft:allow_off_hand": false,
+      "tag:minecraft:is_armor": {},
+      "tag:minecraft:transformable_items": {},
+      "tag:minecraft:trimmable_armors": {},
+      "minecraft:glint": false
+    }
+  }
+}

@@ -1,1 +1,0 @@
-effect @e[r=4,family=zombie] fatal_poison 5 4 true

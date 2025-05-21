@@ -1,0 +1,63 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "i updated everything now.... i hope by ASSYKILLA",
+    "name": "Assykilla's best addon",
+    "uuid": "61565423-3e4a-490e-b379-6030515eabe6",
+    "version": [
+      1,
+      0,
+      25
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "i updated everything now.... i hope by ASSYKILLA",
+      "type": "data",
+      "uuid": "91593fae-1b32-4599-860d-608554a92d72",
+      "version": [
+        1,
+        0,
+        25
+      ]
+    },
+    {
+      "type": "script",
+      "uuid": "84fdc844-2bb4-42af-9fa6-8b1b6e468cab",
+      "version": [
+        1,
+        0,
+        25
+      ],
+      "entry": "scripts/main.js",
+      "language": "javascript"
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "11c5c457-276e-4509-8dbe-9ecd7f7b2b50",
+      "version": [
+        1,
+        0,
+        25
+      ]
+    },
+    {
+      "version": "1.17.0-beta",
+      "module_name": "@minecraft/server"
+    },
+    {
+      "version": "1.4.0-beta",
+      "module_name": "@minecraft/server-ui"
+    },
+    {
+      "version": "1.2.0",
+      "module_name": "@minecraft/common"
+    }
+  ]
+}

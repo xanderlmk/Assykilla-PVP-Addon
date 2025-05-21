@@ -1,1 +1,0 @@
-give @s assy:upgrader_template

@@ -1,0 +1,1 @@
+effect @s speed 1 99

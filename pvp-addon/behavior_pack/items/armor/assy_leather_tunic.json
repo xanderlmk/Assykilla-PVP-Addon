@@ -1,0 +1,79 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "assy:leather_tunic",
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.chestplate"
+      }
+    },
+    "components": {
+      "minecraft:icon": "assy_leather_tunic",
+      "minecraft:max_stack_size": 1,
+      "minecraft:enchantable": {
+        "value": 10,
+        "slot": "armor_torso"
+      },
+      "minecraft:durability": {
+        "max_durability": 5000,
+        "damage_chance": {
+          "min": 60,
+          "max": 100
+        }
+      },
+      "minecraft:knockback_resistance": {
+        "protection": 0
+      },
+      "minecraft:mining_speed": 5,
+      "minecraft:hand_equipped": false,
+      "minecraft:wearable": {
+        "slot": "slot.armor.chest",
+        "protection": 3
+      },
+      "minecraft:render_offsets": {
+        "main_hand": {
+          "third_person": {
+            "scale": [
+              0.1,
+              0.1,
+              0.1
+            ]
+          },
+          "first_person": {
+            "scale": [
+              0.037999999999977205,
+              0.037999999999977205,
+              0.037999999999977205
+            ]
+          }
+        },
+        "off_hand": {
+          "third_person": {
+            "scale": [
+              0.1,
+              0.1,
+              0.1
+            ]
+          },
+          "first_person": {
+            "scale": [
+              0.037999999999977205,
+              0.037999999999977205,
+              0.037999999999977205
+            ]
+          }
+        }
+      },
+      "minecraft:repairable": {
+        "repair_items": []
+      },
+      "minecraft:display_name": {},
+      "minecraft:allow_off_hand": false,
+      "tag:minecraft:is_armor": {},
+      "tag:minecraft:transformable_items": {},
+      "tag:minecraft:trimmable_armors": {},
+      "minecraft:glint": false
+    }
+  }
+}

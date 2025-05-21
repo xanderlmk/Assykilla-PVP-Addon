@@ -1,1 +1,0 @@
-effect @a[r=3] slowness 4 3

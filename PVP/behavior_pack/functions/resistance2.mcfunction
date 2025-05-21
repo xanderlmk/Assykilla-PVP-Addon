@@ -1,1 +1,0 @@
-effect @s resistance 1 2 true
